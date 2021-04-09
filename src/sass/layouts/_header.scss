@@ -1,0 +1,160 @@
+.header {
+  background: linear-gradient(to top, $LightRed 10%, $VeryLightRed);
+  border-bottom-left-radius: 4.125rem 4.125rem;
+  min-height: 70vh;
+
+  @include breakpoints-up(medium) {
+    background: linear-gradient(to left, $LightRed, $VeryLightRed);
+    min-height: 60vh;
+  }
+
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   width: 100%;
+  //   height: 100%;
+  //   background-image: url("/images/bg-pattern-intro.svg");
+  //   background-size: 84%;
+  //   background-repeat: no-repeat;
+  //   background-position: center center;
+  // }
+
+  // &__image {
+  //   position: absolute;
+  //   width: 100%;
+  //   height: 160%;
+  //   background-image: url("/images/bg-pattern-intro.svg");
+  //   background-size: cover;
+  //   background-repeat: no-repeat;
+  //   background-position: -200px -200px;
+  // }
+
+  nav {
+    position: relative;
+    padding-top: 2.0625rem;
+    padding-right: 2.625rem;
+    padding-bottom: 0.0625rem;
+    padding-left: 1.625rem;
+    z-index: 1;
+
+    @include breakpoints-down(medium) {
+      justify-content: space-between;
+    }
+
+    @include breakpoints-up(large) {
+      padding-top: 2.0625rem;
+      padding-right: 2.625rem;
+      padding-bottom: 0.0625rem;
+      padding-left: 4.625rem;
+    }
+  }
+
+  &__logo {
+    margin-top: 0.2rem;
+  }
+
+  &__toggle {
+    //Mobile Menu toggle
+    > span {
+      display: block;
+      width: 26px;
+      height: 2px;
+      background-color: $White;
+      transition: all 300ms ease-in-out;
+      // transform-origin: 3px 1px;
+
+      &:not(:last-child) {
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  &__links {
+    padding-left: 4.2rem;
+    font-size: 0.925rem;
+
+    a {
+      position: relative;
+      color: $White;
+      transition: color 200ms ease-in-out;
+
+      &:not(:last-child) {
+        margin-right: 32px;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        height: 5px;
+        left: 0;
+        right: 0;
+        bottom: -16px;
+        background: $White;
+        opacity: 0;
+        transition: opacity 300ms ease-in-out;
+      }
+
+      &:hover {
+        color: $White;
+
+        &::before {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &__cta {
+    margin-right: 2.2rem;
+
+    .login {
+      font-size: 0.925rem;
+      margin-right: 2.2rem;
+    }
+  }
+
+  &__part {
+    text-align: center;
+    margin-top: 5.2rem;
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+    position: relative;
+  }
+
+  h1 {
+    color: $White;
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin: -0.33em 0;
+
+    @include breakpoints-up(large) {
+      font-size: 2.9375rem;
+    }
+  }
+
+  p {
+    font-size: 1.25rem;
+    font-size: 300;
+  }
+
+  .btn {
+    // &__start {
+    // }
+
+    &__learn {
+      margin-left: 0.825rem;
+      border: 1px $White solid;
+      color: $White;
+
+      padding: 0.875rem 2.1875rem;
+
+      border-radius: 50px;
+
+      cursor: pointer;
+      font-weight: 600;
+      font-size: $font-sm;
+      transition: opacity 300ms ease-in-out;
+    }
+  }
+}
