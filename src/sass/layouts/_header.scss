@@ -1,4 +1,5 @@
 .header {
+  position: relative;
   background: linear-gradient(to top, $LightRed 10%, $VeryLightRed);
   border-bottom-left-radius: 4.125rem 4.125rem;
   min-height: 70vh;
@@ -8,27 +9,21 @@
     min-height: 60vh;
   }
 
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   width: 100%;
-  //   height: 100%;
-  //   background-image: url("/images/bg-pattern-intro.svg");
-  //   background-size: 84%;
-  //   background-repeat: no-repeat;
-  //   background-position: center center;
-  // }
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("/images/bg-pattern-intro.svg");
+    background-size: 92.2rem 83.2rem;
+    background-repeat: no-repeat;
+    background-position: -23.8rem -17.8rem;
 
-  // &__image {
-  //   position: absolute;
-  //   width: 100%;
-  //   height: 160%;
-  //   background-image: url("/images/bg-pattern-intro.svg");
-  //   background-size: cover;
-  //   background-repeat: no-repeat;
-  //   background-position: -200px -200px;
-  // }
-
+    @include breakpoints-up(large) {
+      background-size: 159.2rem 139.2rem;
+      background-position: -17.8rem -58.8rem;
+    }
+  }
   nav {
     position: relative;
     padding-top: 2.0625rem;
