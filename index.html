@@ -1,156 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap" rel="stylesheet">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Styles -->
-<link rel="stylesheet" href="./src/css/normalize.css">
-<link rel="stylesheet" href="./src/css/main.css">
-  
-  <title>Sal's Responsive Challenge</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="./src/css/normalize.css" />
+    <link rel="stylesheet" href="./src/css/main.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Sal's Responsive Challenge</title>
 
-  <header class="header">
-    <div class="header__image"></div>
-    <nav class=" flex flex-ai-c"> 
-      <a href="/" class="header__logo">
-        <img src="./images/logo.svg" alt="Logo" />
-      </a>
-
-      <a id="btnHumburger" href="#" class="header__toggle hide-for-destop ">
-        <span></span>
-        <span></span>
-        <span></span>
-      </a>
-
-      <div class="container--px header__links hide-for-mobile">
-        <a href="#">Product <img src="./images/icon-arrow-light.svg" alt="Logo" /></a>
-        <a href="#">Company <img src="./images/icon-arrow-light.svg" alt="Logo" /></a>
-        <a href="#">Connect <img src="./images/icon-arrow-light.svg" alt="Logo" /></a>
-      </div>
-
-      <div href="#" class="container header__cta hide-for-mobile">
-        <a class="login">
-          Login
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__image"></div>
+      <nav class="flex flex-ai-c">
+        <a href="/" class="header__logo">
+          <img src="./images/logo.svg" alt="Logo" />
         </a>
-        <a class="button">
-          Sign Up
+
+        <a id="btnHumburger" href="#" class="header__toggle hide-for-destop">
+          <span></span>
+          <span></span>
+          <span></span>
         </a>
-      </div>
-    </nav>
-    
-    <div class="header__part">
-      <h1>A modern publishing platform</h1>
-      <p>Grow your audience and build your online brand</p>
 
-      <div href="#" class="btn">
-        <a class="button btn__start">
-          Start for Free
-        </a>
-        <a class=" btn__learn">
-         Learn More
-        </a>
-      </div>
-    </div>
+        <div class="container--px header__links hide-for-mobile">
+          <a href="#"
+            >Product <img src="./images/icon-arrow-light.svg" alt="Logo"
+          /></a>
+          <a href="#"
+            >Company <img src="./images/icon-arrow-light.svg" alt="Logo"
+          /></a>
+          <a href="#"
+            >Connect <img src="./images/icon-arrow-light.svg" alt="Logo"
+          /></a>
+        </div>
 
-  </header>
+        <div href="#" class="container header__cta hide-for-mobile">
+          <a class="login"> Login </a>
+          <a class="button"> Sign Up </a>
+        </div>
+      </nav>
 
-  <section class="hero">
- 
-      <h2 class="hero__title">
-        Designed for the future
-      </h2>
-      <div class="hero__left">
-        <div class="hero__image"></div>
-      
-        <div class="hero__card">
-          <h3>Introducing an extensible editor</h3>
-          <p> Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
-            The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
-            videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
-            change the looks of a blog.</p>
+      <div class="header__part">
+        <h1>A modern publishing platform</h1>
+        <p>Grow your audience and build your online brand</p>
 
-            <h3>Robust content management</h3>
-          <p> Flexible content management enables users to easily move through posts. Increase the usability of your blog 
-            by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
+        <div href="#" class="btn">
+          <a class="button btn__start"> Start for Free </a>
+          <a class="btn__learn"> Learn More </a>
         </div>
       </div>
+    </header>
+
+    <section class="hero">
+      <h2 class="hero__title">Designed for the future</h2>
+      <div class="hero__left">
+        <div class="hero__image"></div>
+
+        <div class="hero__card">
+          <h3>Introducing an extensible editor</h3>
+          <p>
+            Blogr features an exceedingly intuitive interface which lets you
+            focus on one thing: creating content. The editor supports management
+            of multiple blogs and allows easy manipulation of embeds such as
+            images, videos, and Markdown. Extensibility with plugins and themes
+            provide easy ways to add functionality or change the looks of a
+            blog.
+          </p>
+
+          <h3>Robust content management</h3>
+          <p>
+            Flexible content management enables users to easily move through
+            posts. Increase the usability of your blog by adding customized
+            categories, sections, format, or flow. With this functionality,
+            you’re in full control.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="art">
+      <div class="art__image">
+      </div>
+      <div class="container">
+        <div class="art__image2"></div>
+        
+      <h2>State of the Art Infrastructure</h2>
+      <p>
+        With reliability and speed in mind, worldwide data centers provide the
+        backbone for ultra-fast connectivity. This ensures your site will load
+        instantly, no matter where your readers are, keeping your site
+        competitive.
+      </p>
    
-  </section>
+    </div>
+    </section>
 
-  <section class="art">
-    <div class="art__image"></div>
-    <h2>State of the Art Infrastructure</h2>
-    <p>With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
-      This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
-  </section>
+    <section class="blog">
+      <div class="blog__image"></div>
 
-  <section class="blog">  
-    
-    <div class="blog__image"></div>
-    
-    <div class="blog__card">
-      <h3>Free, open, simple</h3>
-      <p> Blogr is a free and open source application backed by a large community of helpful developers. It supports 
-        features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
-        and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
+      <div class="blog__card">
+        <h3>Free, open, simple</h3>
+        <p>
+          Blogr is a free and open source application backed by a large
+          community of helpful developers. It supports features such as code
+          syntax highlighting, RSS feeds, social media integration, third-party
+          commenting tools, and works seamlessly with Google Analytics. The
+          architecture is clean and is relatively easy to learn.
+        </p>
 
         <h3>Powerful tooling</h3>
-      <p> Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
-        capable of producing even the most complicated sites.</p>
-    </div>
-  
- 
-</section>
+        <p>
+          Batteries included. We built a simple and straightforward CLI tool
+          that makes customization and deployment a breeze, but capable of
+          producing even the most complicated sites.
+        </p>
+      </div>
+    </section>
 
-<footer class="footer">
-  <div class="container">
-    <a href="#" class="footer__logo">
-      <img src="./images/logo.svg" alt="Logo">
-    </a>
-  
+    <footer class="footer">
+      <div class="container">
+        <a href="#" class="footer__logo">
+          <img src="./images/logo.svg" alt="Logo" />
+        </a>
 
-  <div class="footer__links col1"> 
-    <h3>Product</h3>
-      <a href="#">Overview</a>
-      <a href="#">Pricing</a>
-      <a href="#">Marketplace</a>
-      <a href="#">Features</a>
-      <a href="#">Integrations</a>
-  </div>
+        <div class="footer__links col1">
+          <h3>Product</h3>
+          <a href="#">Overview</a>
+          <a href="#">Pricing</a>
+          <a href="#">Marketplace</a>
+          <a href="#">Features</a>
+          <a href="#">Integrations</a>
+        </div>
 
-  <div class="footer__links col2">
-    <h3>Company</h3>
-    <a href="#">About</a>
-    <a href="#">Team</a>
-    <a href="#">Blog</a>
-    <a href="#">Careers</a>
-  </div>
+        <div class="footer__links col2">
+          <h3>Company</h3>
+          <a href="#">About</a>
+          <a href="#">Team</a>
+          <a href="#">Blog</a>
+          <a href="#">Careers</a>
+        </div>
 
-  <div class="footer__links col3">
-    <h3>Connect</h3>
-    <a href="#">Contact</a>
-    <a href="#">Newsletter</a>
-    <a href="#">LinkedIn</a>
-  </div>
-</div>
-
-</footer>
-  <!-- Product
+        <div class="footer__links col3">
+          <h3>Connect</h3>
+          <a href="#">Contact</a>
+          <a href="#">Newsletter</a>
+          <a href="#">LinkedIn</a>
+        </div>
+      </div>
+    </footer>
+    <!-- Product
 
   Overview
   Pricing
@@ -194,31 +220,58 @@
   
 
   -->
-  <!-- <img src="./images/logo.svg" style="background-color: black;"  alt="Logo" />
-  <img src="./images/bg-pattern-circles.svg" height="200px" alt="Logo" />
+    <!-- <img src="./images/logo.svg" style="background-color: black" alt="Logo" />
+    <img src="./images/bg-pattern-circles.svg" height="200px" alt="Logo" />
 
-  <img src="./images/bg-pattern-intro.svg" height="200px" alt="Logo" />
-  <img src="./images/favicon-32x32.png" height="200px" alt="Logo" />
-  <img src="./images/icon-arrow-dark.svg"  height="200px" alt="Logo" />
+    <img src="./images/bg-pattern-intro.svg" height="200px" alt="Logo" />
+    <img src="./images/favicon-32x32.png" height="200px" alt="Logo" />
+    <img src="./images/icon-arrow-dark.svg" height="200px" alt="Logo" />
 
-  <img src="./images/icon-arrow-light.svg" style="background-color: black;" height="200px" alt="Logo" />
-  <img src="./images/icon-close.svg" style="background-color: black;" height="200px" alt="Logo" />
-  <img src="./images/icon-hamburger.svg" style="background-color: black;"  alt="Logo" />
-  <img src="./images/illustration-editor-desktop.svg"  height="200px" alt="Logo" />
-  <img src="./images/illustration-editor-mobile.svg" height="200px" alt="Logo" />
-  <img src="./images/illustration-laptop-desktop.svg" height="200px" alt="Logo" />
-  <img src="./images/illustration-laptop-mobile.svg" height="200px" alt="Logo" />
-  <img src="./images/illustration-phones.svg" height="200px" alt="Logo" />
- -->
+    <img
+      src="./images/icon-arrow-light.svg"
+      style="background-color: black"
+      height="200px"
+      alt="Logo"
+    />
+    <img
+      src="./images/icon-close.svg"
+      style="background-color: black"
+      height="200px"
+      alt="Logo"
+    />
+    <img
+      src="./images/icon-hamburger.svg"
+      style="background-color: black"
+      alt="Logo"
+    />
+    <img
+      src="./images/illustration-editor-desktop.svg"
+      height="200px"
+      alt="Logo"
+    />
+    <img
+      src="./images/illustration-editor-mobile.svg"
+      height="200px"
+      alt="Logo"
+    />
+    <img
+      src="./images/illustration-laptop-desktop.svg"
+      height="200px"
+      alt="Logo"
+    />
+    <img
+      src="./images/illustration-laptop-mobile.svg"
+      height="200px"
+      alt="Logo"
+    />
+    <img src="./images/illustration-phones.svg" height="200px" alt="Logo" /> -->
 
-  
-
-  <!-- <div class="attribution">
+    <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
 
-  <!-- Js file -->
-  <script src="./src/js/script.js"></script>
-</body>
+    <!-- Js file -->
+    <script src="./src/js/script.js"></script>
+  </body>
 </html>
