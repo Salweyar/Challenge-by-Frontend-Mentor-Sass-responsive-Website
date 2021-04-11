@@ -73,6 +73,10 @@
       color: $White;
       transition: color 200ms ease-in-out;
 
+      .rotate {
+        transform: rotate(180deg);
+      }
+
       &:not(:last-child) {
         margin-right: 32px;
       }
@@ -97,6 +101,18 @@
           opacity: 1;
         }
       }
+    }
+
+    .submenu1 {
+      @include dropdown(-2px);
+    }
+
+    .submenu2 {
+      @include dropdown(-3px);
+    }
+
+    .submenu3 {
+      @include dropdown(-2px);
     }
   }
 
