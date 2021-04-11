@@ -1,3 +1,4 @@
+// Large screen dropdown
 const submenu1 = document.querySelectorAll(".submenu1");
 const submenu2 = document.querySelectorAll(".submenu2");
 const submenu3 = document.querySelectorAll(".submenu3");
@@ -59,3 +60,44 @@ window.onclick = function (event) {
     }
   }
 };
+
+// Small and medium screen
+const open1 = document.querySelectorAll(".open1");
+const open2 = document.querySelectorAll(".open2");
+const open3 = document.querySelectorAll(".open3");
+const arrow = document.querySelectorAll(".arrow");
+
+//toogle the Product dropdown when click
+Open1 = () => {
+  open1[0].classList.toggle("show");
+  arrow[0].classList.toggle("rotate");
+};
+
+//toogle the Company dropdown when click
+Open2 = () => {
+  open2[0].classList.toggle("show");
+  arrow[1].classList.toggle("rotate");
+};
+
+//toogle the Connect dropdown when click
+Open3 = () => {
+  open3[0].classList.toggle("show");
+  arrow[2].classList.toggle("rotate");
+};
+
+// Hamburger Icon toggle
+const menu = document.querySelector("#btnHumburger");
+const header = document.querySelector(".header");
+const open = document.querySelectorAll(".header__menu");
+
+menu.addEventListener("click", () => {
+  open[0].classList.toggle("show");
+  if (header.classList.contains("open")) {
+    // Close menu
+
+    header.classList.remove("open");
+  } else {
+    // Open menu
+    header.classList.add("open");
+  }
+});

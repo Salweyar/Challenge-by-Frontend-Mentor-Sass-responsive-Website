@@ -62,3 +62,30 @@ $breakpoints-down: (
     }
   }
 }
+
+@mixin open() {
+  display: none;
+
+  list-style-type: none;
+  background-color: rgb(236, 236, 236);
+  padding: 1.05rem 1.98rem 1.2rem 1.2rem;
+  margin-bottom: 0;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgb(236, 236, 236);
+  transition: opacity 300ms ease-in-out;
+
+  &.show {
+    display: block;
+  }
+
+  > li {
+    font-size: 14px;
+    font-weight: 600;
+    color: $VeryDarkGrayishBlue;
+    line-height: 2.5;
+
+    &:hover {
+      font-weight: 300;
+    }
+  }
+}

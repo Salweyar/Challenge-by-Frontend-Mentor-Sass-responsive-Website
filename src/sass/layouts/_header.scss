@@ -2,7 +2,7 @@
   position: relative;
   background: linear-gradient(to top, $LightRed 10%, $VeryLightRed);
   border-bottom-left-radius: 4.125rem 4.125rem;
-  min-height: 70vh;
+  min-height: 56vh;
 
   @include breakpoints-up(medium) {
     background: linear-gradient(to left, $LightRed, $VeryLightRed);
@@ -19,9 +19,12 @@
     background-repeat: no-repeat;
     background-position: -23.8rem -17.8rem;
 
+    border-bottom-left-radius: 4.125rem 4.125rem;
+
     @include breakpoints-up(large) {
       background-size: 159.2rem 139.2rem;
       background-position: -17.8rem -58.8rem;
+      border: none;
     }
   }
   nav {
@@ -46,6 +49,26 @@
 
   &__logo {
     margin-top: 0.2rem;
+  }
+
+  @include breakpoints-down(medium) {
+    &.open {
+      .header__toggle {
+        > span:first-child {
+          transform: rotate(45deg);
+          margin-bottom: 0;
+        }
+
+        > span:nth-child(2) {
+          opacity: 0;
+          display: none;
+        }
+
+        > span:last-child {
+          transform: rotate(-45deg);
+        }
+      }
+    }
   }
 
   &__toggle {
@@ -122,6 +145,75 @@
     .login {
       font-size: 0.925rem;
       margin-right: 2.2rem;
+    }
+  }
+
+  @include breakpoints-down(medium) {
+    &__menu {
+      z-index: 5;
+      display: none;
+      position: absolute;
+      width: calc(100% - 3rem);
+      left: 50%;
+      transform: translateX(-50%);
+      background: $veryLightGray;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      padding: 1.625rem 1.625rem;
+      margin-top: 1.5rem;
+      border-radius: 5px;
+
+      &.show {
+        display: block;
+      }
+
+      a {
+        // border: 1px magenta solid;
+        display: block;
+        font-weight: 600;
+        font-size: 0.99rem;
+        text-align: center;
+        color: $VeryDarkBlue;
+        padding: 0.925rem;
+
+        transition: all 150ms ease-in-out;
+
+        &:hover {
+          color: rgba(102, 102, 102, 0.75);
+        }
+
+        .rotate {
+          transform: rotate(180deg);
+        }
+
+        .open1 {
+          @include open();
+        }
+
+        .open2 {
+          @include open();
+        }
+
+        .open3 {
+          @include open();
+        }
+      }
+
+      .line {
+        margin: 0.825rem;
+        border: 1px rgb(197, 197, 197) solid;
+      }
+
+      .cta {
+        .button {
+          background: linear-gradient(to left, $LightRed, $VeryLightRed);
+          color: $White;
+          padding-top: 0.9rem;
+          padding-bottom: 0.9rem;
+          margin-left: 4.2rem;
+          margin-right: 4.2rem;
+        }
+      }
     }
   }
 
