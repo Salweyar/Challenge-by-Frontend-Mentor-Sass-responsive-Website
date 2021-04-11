@@ -9,7 +9,7 @@ This is a starter template for Front-end Developer
 -[VS code plugins: Live sass compiler](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass) [and] [Live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 
 ## Demo
-![]()
+[Check it out](https://github.com/Salweyar/salweyar.github.io/blob/main/images/Challenge/challenge.gif)
 
 ## Usage
 Note: I have customize the sass save path in .vscode file. Please feel free to customize as you like
